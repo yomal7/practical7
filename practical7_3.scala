@@ -1,5 +1,5 @@
 def filterPrime(list: List[Int]) = {
-    list.filter(i => i>1 && (2 to math.sqrt(i).toInt).forall(n=> i%n != 0))
+    list.filter((i:Int) => i>1 && (2 to math.sqrt(i).toInt).forall(n=> i%n != 0))
 }
 
 @main def practical7_3(): Unit = {
